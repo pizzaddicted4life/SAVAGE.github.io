@@ -1,152 +1,82 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAVAGE</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
-        / Estilos generales del body */
-        html {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            font-family: 'Courier New';
-            font-style: normal;
-        }
-
-        body {
-            background-image: url(https://raw.githubusercontent.com/pizzaddicted4life/savage.github.io/main/assets/images/BACKGROUND.gif);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-color: #000;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* Wrapper que contiene el título y el SVG */
-        .wrapper {
-            position: relative;
-            width: 95vw;
-            height: 95vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Estilo del título H1 */
-        h1 {
-            color: white;
-            font-family: "Orbitron", sans-serif;
-            font-weight: 900;
-            font-size: 10vw;
-            text-align: center;
-            position: absolute;
-            z-index: 1;
-            margin: 0;
-        }
-
-        /* SVG con tamaño adaptativo */
-        svg {
-            position: absolute;
-            width: 95%;
-            height: 95%;
-            z-index: 0;
-        }
-
-        /* Estilo del texto dentro del SVG */
-        text {
-            fill: #e3e4e5;
-            font-family: "Orbitron", sans-serif;
-            font-weight: 400;
-            font-size: 2vw;
-        }
-
-        /* Estilos para pantallas más pequeñas */
-        @media screen and (max-width: 600px) {
-            h1 {
-                font-size: 15vw;
-                writing-mode: vertical-rl;
-                text-orientation: upright;
+<!DOCTYPE html><html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">}
+        <title>SAVAGE</title>
+        <link rel="icon" href="https://raw.githubusercontent.com/pizzaddicted4life/savage.github.io/main/assets/images/favicon.png" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+            html, body {
+                width: 100%;
+                height: 100%;
             }
-
-            text {
-                font-size: 2vw;
+            body {
+                background-image: url(https://raw.githubusercontent.com/pizzaddicted4life/savage.github.io/main/assets/images/BACKGROUND.gif);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: #000;
+                max-height: 100%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Orbitron", sans-serif;
+                }
+            .wrapper {
+                position: relative;
+                /* Permite que el SVG se posicione absolutamente respecto a este contenedor */
+                text-align: center;
+            }        
+            h1 {
+                color: white;
+                font-family: "Orbitron",
+                sans-serif;
+                font-weight: 900;
+                font-size: 25vh;
+                margin: 0;
+                z-index: 1;
+                /* Coloca el texto por encima del SVG */
+                position: relative;
+                text-align: center;
             }
             svg {
-            width: 95%;
-            height: 95%;
-        }
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <!-- Título "SAVAGE" -->
-        <h1>SAVAGE</h1>
-
-        <!-- SVG con Texto y Enlaces -->
-        <svg id="responsiveSvg" viewBox="100% 190% 100% 190%"
-        preserveAspectRatio="100%">
-            <defs>
-                <path id="rectPath" d="M 10 10 L 90 10 L 90 90 L 10 90 Z" />
-            </defs>
-
-            <text>
-                <textPath href="#rectPath" startOffset="0%" method="stretch">
-                    <a href="https://ejemplo.com/palabra1" target="_blank" style="font-weight: normal;">¡El</a>
-                    <a href="https://ejemplo.com/palabra2" target="_blank" style="font-weight: bold;">trabajo</a>
-                    <a href="https://ejemplo.com/palabra3" target="_blank" style="font-weight: normal;">remoto</a>
-                    <a href="https://ejemplo.com/palabra4" target="_blank" style="font-weight: bold;">ya</a>
-                    <a href="https://ejemplo.com/palabra5" target="_blank" style="font-weight: normal;">no</a>
-                    <a href="https://ejemplo.com/palabra6" target="_blank" style="font-weight: bold;">es</a>
-                    <a href="https://ejemplo.com/palabra7" target="_blank" style="font-weight: normal;">la</a>
-                    <a href="https://ejemplo.com/palabra8" target="_blank" style="font-weight: bold;">estrella,</a>
-                    <a href="https://ejemplo.com/palabra9" target="_blank" style="font-weight: normal;">el</a>
-                    <a href="https://ejemplo.com/palabra10" target="_blank" style="font-weight: bold;">Borderless</a>
-                    <a href="https://ejemplo.com/palabra11" target="_blank" style="font-weight: normal;">Talent</a>
-                    <a href="https://ejemplo.com/palabra12" target="_blank" style="font-weight: bold;">es</a>
-                    <a href="https://ejemplo.com/palabra13" target="_blank" style="font-weight: normal;">la</a>
-                    <a href="https://ejemplo.com/palabra14" target="_blank" style="font-weight: bold;">tendencia</a>
-                    <a href="https://ejemplo.com/palabra15" target="_blank" style="font-weight: normal;">que</a>
-                    <a href="https://ejemplo.com/palabra16" target="_blank" style="font-weight: bold;">se</a>
-                    <a href="https://ejemplo.com/palabra17" target="_blank" style="font-weight: normal;">ha</a>
-                    <a href="https://ejemplo.com/palabra18" target="_blank" style="font-weight: bold;">adueñado</a>
-                    <a href="https://ejemplo.com/palabra19" target="_blank" style="font-weight: normal;">de</a>
-                    <a href="https://ejemplo.com/palabra20" target="_blank" style="font-weight: bold;">las</a>
-                    <a href="https://ejemplo.com/palabra21" target="_blank" style="font-weight: normal;">conversaciones</a>
-                    <a href="https://ejemplo.com/palabra22" target="_blank" style="font-weight: bold;">entre</a>
-                    <a href="https://ejemplo.com/palabra23" target="_blank" style="font-weight: normal;">los</a>
-                    <a href="https://ejemplo.com/palabra24" target="_blank" style="font-weight: bold;">CEO</a>
-                    <a href="https://ejemplo.com/palabra25" target="_blank" style="font-weight: normal;">de</a>
-                    <a href="https://ejemplo.com/palabra26" target="_blank" style="font-weight: bold;">tecnología!</a>
-                </textPath>
-            </text>
-        </svg>
-    </div>
-
-    <script>
-        function updateSvgViewBox() {
-            const svg = document.getElementById('responsiveSvg');
-            const aspectRatio = window.innerWidth / window.innerHeight;
-
-            if (aspectRatio > 1) {
-                // Pantalla apaisada (horizontal), 16:9 por ejemplo
-                svg.setAttribute('viewBox', '0 0 160 90');
-            } else {
-                // Pantalla vertical, 9:16 por ejemplo
-                svg.setAttribute('viewBox', '0 0 90 160');
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+                /* Ajustamos el ancho del SVG al 95% del viewport */            height: 95%; /* Ajustamos el alto del SVG al 95% del viewport */            z-index: 0; /* Coloca el SVG debajo del texto */        }        text {            fill: #e3e4e5;            font-size: 4vh;            font-weight: 400;        }
+        /* Estilos para pantallas más pequeñas */        
+            @media screen and (max-width: 600px)
+            {            
+                h1 {
+                    font-size: 15vw;
+                    /* Ajusta el tamaño del texto para pantallas pequeñas */
+                    writing-mode:
+                    vertical-rl;
+                    /* Cambia el texto a formato vertical */
+                    text-orientation: upright;
+                    /* Asegura que las letras estén en la orientación correcta */
+                    letter-spacing: 0vw;
+                    /* Espaciado entre letras para mayor legibilidad */
+                }
+                svg {
+                    width: 95%;
+                    /* Asegura que el SVG mantenga el 95% de ancho */
+                    height: 95%;
+                    /* Asegura que el SVG mantenga el 95% de alto */
+                }
+                text {
+                    font-size: 2vw;
+                    /* Ajustamos el tamaño del texto SVG para pantallas pequeñas */
+                }
             }
-        }
-
-        window.addEventListener('resize', updateSvgViewBox);
-        window.addEventListener('load', updateSvgViewBox);
-    </script>
-</body>
-</html>
+    </style>
+    </head><body>    <div class="wrapper">        <!-- Título "SAVAGE" -->        <h1>SAVAGE</h1>
+        <!-- SVG con Texto y Enlaces -->        <svg viewBox="0 0 100 100">            <defs>                <path id="rectPath" d="M 10 10 L 90 10 L 90 90 L 10 90 Z" />            </defs>
+            <text>                <textPath href="#rectPath" startOffset="0%" method="stretch">                    
+                <a href="https://ejemplo.com/palabra1" target="_blank" style="font-weight: normal;">¡El</a>                    <a href="https://ejemplo.com/palabra2" target="_blank" style="font-weight: bold;">trabajo</a>                    <a href="https://ejemplo.com/palabra3" target="_blank" style="font-weight: normal;">remoto</a>                    <a href="https://ejemplo.com/palabra4" target="_blank" style="font-weight: bold;">ya</a>                    <a href="https://ejemplo.com/palabra5" target="_blank" style="font-weight: normal;">no</a>                    <a href="https://ejemplo.com/palabra6" target="_blank" style="font-weight: bold;">es</a>                    <a href="https://ejemplo.com/palabra7" target="_blank" style="font-weight: normal;">la</a>                    <a href="https://ejemplo.com/palabra8" target="_blank" style="font-weight: bold;">estrella,</a>                    <a href="https://ejemplo.com/palabra9" target="_blank" style="font-weight: normal;">el</a>                    <a href="https://ejemplo.com/palabra10" target="_blank" style="font-weight: bold;">Borderless</a>                    <a href="https://ejemplo.com/palabra11" target="_blank" style="font-weight: normal;">Talent</a>                    <a href="https://ejemplo.com/palabra12" target="_blank" style="font-weight: bold;">es</a>                    <a href="https://ejemplo.com/palabra13" target="_blank" style="font-weight: normal;">la</a>                    <a href="https://ejemplo.com/palabra14" target="_blank" style="font-weight: bold;">tendencia</a>                    <a href="https://ejemplo.com/palabra15" target="_blank" style="font-weight: normal;">que</a>                    <a href="https://ejemplo.com/palabra16" target="_blank" style="font-weight: bold;">se</a>                    <a href="https://ejemplo.com/palabra17" target="_blank" style="font-weight: normal;">ha</a>                    <a href="https://ejemplo.com/palabra18" target="_blank" style="font-weight: bold;">adueñado</a>                    <a href="https://ejemplo.com/palabra19" target="_blank" style="font-weight: normal;">de</a>                    <a href="https://ejemplo.com/palabra20" target="_blank" style="font-weight: bold;">las</a>                    <a href="https://ejemplo.com/palabra21" target="_blank" style="font-weight: normal;">conversaciones</a>                    <a href="https://ejemplo.com/palabra22" target="_blank" style="font-weight: bold;">entre</a>                    <a href="https://ejemplo.com/palabra23" target="_blank" style="font-weight: normal;">los</a>                    <a href="https://ejemplo.com/palabra24" target="_blank" style="font-weight: bold;">CEO</a>                    <a href="https://ejemplo.com/palabra25" target="_blank" style="font-weight: normal;">de</a>                    <a href="https://ejemplo.com/palabra26" target="_blank" style="font-weight: bold;">tecnología!</a>                </textPath>            </text>        </svg>    </div></body></html
